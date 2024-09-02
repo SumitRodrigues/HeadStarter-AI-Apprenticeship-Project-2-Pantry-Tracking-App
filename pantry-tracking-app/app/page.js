@@ -11,7 +11,7 @@ export default function Home() {
     { name: 'Candy', price: 7.95}
   ]);
 
-  const [total, setTotal] = useState(0)
+  const [total, setTotal] = useState(0);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-4">
@@ -47,7 +47,7 @@ export default function Home() {
             ))}
           </ul>
           {items.length < 1 ? ('') : (
-            <div>
+            <div className='flex justify-between p-3'>
               <span>Total</span>
               <span>$ {total}</span>
             </div>
