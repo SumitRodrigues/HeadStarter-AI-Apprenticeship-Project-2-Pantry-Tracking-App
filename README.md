@@ -59,7 +59,7 @@ Make sure you have **Node.js** and **npm** installed on your machine. You’ll a
 ### Steps
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/pantry-tracking-app.git
+   git clone https://github.com/SumitRodrigues/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App.git
    cd pantry-tracking-app
    ```
 
