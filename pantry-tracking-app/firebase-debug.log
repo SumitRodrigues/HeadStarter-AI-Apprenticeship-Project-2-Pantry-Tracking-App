@@ -1,0 +1,104 @@
+[debug] [2024-09-08T14:47:42.894Z] ----------------------------------------------------------------------
+[debug] [2024-09-08T14:47:42.896Z] Command:       /opt/homebrew/Cellar/node/22.7.0/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2024-09-08T14:47:42.896Z] CLI Version:   13.16.0
+[debug] [2024-09-08T14:47:42.896Z] Platform:      darwin
+[debug] [2024-09-08T14:47:42.896Z] Node Version:  v22.7.0
+[debug] [2024-09-08T14:47:42.896Z] Time:          Sun Sep 08 2024 07:47:42 GMT-0700 (Pacific Daylight Time)
+[debug] [2024-09-08T14:47:42.896Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-08T14:47:42.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-08T14:47:42.925Z] > authorizing via signed-in user (sumitrod11@gmail.com)
+[debug] [2024-09-08T14:47:42.925Z] [iam] checking project inventory-management-app-d9b92 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-08T14:47:42.926Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/inventory-management-app-d9b92:testIamPermissions [none]
+[debug] [2024-09-08T14:47:42.926Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/inventory-management-app-d9b92:testIamPermissions x-goog-quota-user=projects/inventory-management-app-d9b92
+[debug] [2024-09-08T14:47:42.926Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/inventory-management-app-d9b92:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-08T14:47:43.207Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/inventory-management-app-d9b92:testIamPermissions 200
+[debug] [2024-09-08T14:47:43.208Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/inventory-management-app-d9b92:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-08T14:47:43.208Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/inventory-management-app-d9b92 [none]
+[debug] [2024-09-08T14:47:43.570Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/inventory-management-app-d9b92 200
+[debug] [2024-09-08T14:47:43.570Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/inventory-management-app-d9b92 {"projectId":"inventory-management-app-d9b92","projectNumber":"7430652096","displayName":"Inventory Management App","name":"projects/inventory-management-app-d9b92","resources":{"hostingSite":"inventory-management-app-d9b92"},"state":"ACTIVE","etag":"1_f6f71835-c0ae-4235-b918-5665b01b9945"}
+[debug] [2024-09-08T14:47:44.143Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/inventory-management-app-d9b92/sites pageToken=&pageSize=10
+[debug] [2024-09-08T14:47:45.078Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/inventory-management-app-d9b92/sites 200
+[debug] [2024-09-08T14:47:45.078Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/inventory-management-app-d9b92/sites {"sites":[{"name":"projects/inventory-management-app-d9b92/sites/inventory-management-app-d9b92","defaultUrl":"https://inventory-management-app-d9b92.web.app","appId":"1:7430652096:web:35b8e2d32cddc72b36ed25","type":"DEFAULT_SITE"}]}
+[debug] [2024-09-08T14:47:45.079Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:7430652096:web:35b8e2d32cddc72b36ed25/config [none]
+[debug] [2024-09-08T14:47:45.477Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:7430652096:web:35b8e2d32cddc72b36ed25/config 200
+[debug] [2024-09-08T14:47:45.477Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:7430652096:web:35b8e2d32cddc72b36ed25/config {"projectId":"inventory-management-app-d9b92","appId":"1:7430652096:web:35b8e2d32cddc72b36ed25","storageBucket":"inventory-management-app-d9b92.appspot.com","apiKey":"AIzaSyBi9IwXE2aYuliXrbkpE9x3IXFHAGwyycw","authDomain":"inventory-management-app-d9b92.firebaseapp.com","messagingSenderId":"7430652096","measurementId":"G-36MZM7R6XM"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-09-08T14:47:46.489Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/inventory-management-app-d9b92/sites/inventory-management-app-d9b92 [none]
+[debug] [2024-09-08T14:47:46.848Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/inventory-management-app-d9b92/sites/inventory-management-app-d9b92 200
+[debug] [2024-09-08T14:47:46.848Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/inventory-management-app-d9b92/sites/inventory-management-app-d9b92 {"name":"projects/inventory-management-app-d9b92/sites/inventory-management-app-d9b92","defaultUrl":"https://inventory-management-app-d9b92.web.app","appId":"1:7430652096:web:35b8e2d32cddc72b36ed25","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.7
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] (node:4856) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:4866) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info]    Generating static pages (1/5) 
+
+[info]    Generating static pages (2/5) 
+   Generating static pages (3/5) 
+
+[info] [2024-09-08T14:47:52.340Z]  @firebase/analytics: Analytics: Firebase Analytics is not supported in this environment. Wrap initialization of analytics in analytics.isSupported() to prevent initialization in unsupported environments. Details: (1) Cookies are not available. (analytics/invalid-analytics-context).
+ReferenceError: window is not defined
+    at vI (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2756:550)
+    at v2 (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2801:920)
+    at er.instanceFactory (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2801:1641)
+    at ei.getOrInitializeService (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:181:2776)
+    at ei.initialize (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:181:2151)
+    at v3 (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2801:1283)
+    at v4 (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2801:1117)
+    at 8262 (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2801:2160)
+    at Object.t [as require] (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/webpack-runtime.js:1:128)
+    at require (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:16:18490) {
+  digest: '1153870802'
+}
+
+[info] 
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+ReferenceError: window is not defined
+    at vI (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2756:550)
+    at v2 (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2801:920)
+    at er.instanceFactory (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2801:1641)
+    at ei.getOrInitializeService (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:181:2776)
+    at ei.initialize (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:181:2151)
+    at v3 (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2801:1283)
+    at v4 (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2801:1117)
+    at 8262 (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/app/page.js:2801:2160)
+    at Object.t [as require] (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/server/webpack-runtime.js:1:128)
+    at require (/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:16:18490)
+
+[info]  ✓ Generating static pages (5/5)
+
+[info] 
+
+[info] > Export encountered errors on following paths:
+	/page: /
+
+[debug] [2024-09-08T14:47:52.732Z] Error: ENOENT: no such file or directory, open '/Users/sumitrodrigues/Desktop/HeadStarter AI/Project 2/HeadStarter-AI-Apprenticeship-Project-2-Pantry-Tracking-App/pantry-tracking-app/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
