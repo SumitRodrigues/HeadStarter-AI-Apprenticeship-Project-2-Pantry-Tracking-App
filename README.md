@@ -117,13 +117,6 @@ Make sure you have **Node.js** and **npm** installed on your machine. You’ll a
 
 <img width="1424" alt="image" src="https://github.com/user-attachments/assets/12d3b80d-526b-48ac-acf5-73268f912a94">
 
-
-### Adding an Item
-![Add Item](https://linktoyourimage.com/add-item.png)
-
-### Live Total Calculation
-![Total](https://linktoyourimage.com/live-total.png)
-
 ## Contributing
 
 If you’d like to contribute to this project, please follow these steps:
